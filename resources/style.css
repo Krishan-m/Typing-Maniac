@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#typingWrapper{
+    margin: 50px auto;
+    width: 40%;
+    text-align: center;
+}
+
+#typeHere{
+    color: #565656;
+    resize: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    &:focus-visible{
+        border: 1px solid red;
+        outline: none;
+    }
+}
+
+#typeHere::nth-letter(4){
+    color: black;
+}
+
+.highlight-correct{
+    color: greenyellow;
+}
+
+.highlight-wrong{
+    color: red;
+}
